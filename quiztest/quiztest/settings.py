@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'users',
+    'quiz',
 ]
 
 MIDDLEWARE = [
@@ -78,8 +80,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'quizdb',
-        'USER': os.environ.get('MY_DATABASE_USER'),
-        'PASSWORD': os.environ.get('MY_DATABASE_PASSWORD'),
+        'USER': os.environ.get('databasae_user'),
+        'PASSWORD': os.environ.get('databasae_pas'),
         'HOST': 'localhost',
     }
 }
